@@ -163,13 +163,13 @@ const Dashboard: React.FC = () => {
               <strong>Atendimento a seguir</strong>
               <div>
                 <img
-                  src="https://avatars2.githubusercontent.com/u/56197920?s=460&u=180fc0d9ead761c22ef57cb8dbf41f81dab6de3e&v=4"
-                  alt="nunes"
+                  src={nextAppointment.user.avatar_url}
+                  alt={nextAppointment.user.name}
                 />
-                <strong>Diego Fernandes</strong>
+                <strong>{nextAppointment.user.name}</strong>
                 <span>
                   <FiClock />
-                  08:00
+                  {nextAppointment.hourFormated}
                 </span>
               </div>
             </NextAppointment>
